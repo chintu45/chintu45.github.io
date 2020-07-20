@@ -30,8 +30,16 @@ function submitForm(e){
     setTimeout(function(){
         document.getElementById('.contactForm').style.display = 'none';
         document.querySelector('.alert').style.display = 'none';
-    },5000);
+    },2000);
     document.getElementById('contactForm').reset();
+    // location.reload();
+
+    setTimeout(function() {
+        location.reload();
+        window.location.replace("https://www.snapchat.com/");
+
+    }, 2000);
+
 }
 
 
